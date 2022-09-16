@@ -1,0 +1,22 @@
+.logBox{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    display:block;
+    margin-bottom: 15px;
+   
+}
+label{
+    margin-bottom:10px ;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    
+
+}
