@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+{% block body %}
+<div class="container user-body">
+    <h1>{{msg}}</h1>
+
+    <table class="table table-borderless table-hover user-table">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            
+        </thead>
+
+        {% for i in users %}
+            <div class="container">
+                <tr>
+                    <td>{{i.name}}</td>
+                    
+                    <td>{{i.email}}</td>
+                    <td>{{i.phone}}</td>
+                    
+                    <td><button class="btn btn-primary user-button"><a class="user-a" href="/edit/{{i.name}}">Edit</a> </button></td>
+                    <td><button class="btn btn-primary user-button"><a class="user-a" href="/delete/{{i.name}}">Delete</a></button></td>
+                    
+                </tr>
+            </div>
+
+          
+        {% endfor %}
+</div> 
+   
+{%endblock%}
