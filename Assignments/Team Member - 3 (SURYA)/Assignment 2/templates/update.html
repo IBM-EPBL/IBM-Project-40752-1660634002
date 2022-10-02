@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="container update-body">
+    {%if user %}
+    <h1>Update</h1>
+    <form action="/edit/{{user[0]}}" method="post">
+        <label for="">Name</label><br>
+        <input type="text" value={{user[0]}} name="name"><br>
+        <label for="">email</label><br>
+        <input type="text" value={{user[1]}} name="email"><br>
+        <label for="">Phone</label><br>
+        <input type="text" value={{user[2]}} name="phone"><br>
+        <button class="btn btn-primary save-button" type="submit">save</button>
+    </form>
+    {%endif%}
+</div>
+    
+{%endblock%}

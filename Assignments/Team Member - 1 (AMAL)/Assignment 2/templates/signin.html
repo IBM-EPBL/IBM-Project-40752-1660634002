@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>SignIn</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container signin-body">
+        <h1>SignIn</h1>
+        <form action="/signin">
+            <label for="">Email</label><br>
+            <input type="email" placeholder="Email"><br><br>
+            <label for="">Password</label><br>
+            <input type="password" placeholder="password"><br>
+            <button class="btn btn-primary signin-button">SignIn</button>
+        </form>
+        <div class="signin-content">
+            <h3>The sign In page</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+    </div>
+    
+{% endblock %}
