@@ -1,0 +1,281 @@
+body{
+    background-color:#F7ECDE;
+    font-family: Merriweather;
+}
+
+
+li{
+    list-style-type: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.name{
+    display: flex;
+    margin-left:136px ;
+}
+
+.elements{
+    display: flex;
+    letter-spacing: 20px;
+    margin-right: 116px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.container{
+
+    display: flex;
+    width :100%;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-container{
+    font-family: Merriweather ;
+    font-weight:bolder;
+    display: flex;
+    color: #2C3639;
+    font-weight: 800;
+    width: 100%;
+    min-height: 50px;
+    Justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color:#AFB4FF;
+    border-radius: 20px;
+    box-shadow: 0 0 3px #D4F6CC;
+    
+    
+}
+
+.buttons{
+    
+    display: flex;
+    justify-content:space-between;
+    padding: 22px;
+    
+}
+.button{
+    height: 30px;
+    padding: 5px;
+    border-radius: 40px;
+    color:white;
+    outline: none;
+    border: none;
+    padding-left: 2rem;
+    padding-right:2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51,51,51,0.5);
+    margin-right:0.5rem;
+    margin-bottom: 12px;
+    
+}
+.domain{
+    margin-top: 0;
+    padding-left: 90px ;
+}
+
+.description{
+    max-width: 450px;
+}
+
+
+.download{
+    cursor: pointer;
+    background-color:#1F4690;
+    color:wheat;
+
+}
+a{
+    color: wheat;
+    text-decoration: none;
+}
+
+.hereMe{
+    cursor: pointer;
+    background-color: rgb(63, 179, 63);
+}
+
+.twitter{
+    color:#1DA1F2;
+}
+.linkedin{
+    color: 	#4267B2;
+}
+.instagram{
+    color:#bc2a8d;
+}
+.github{
+    color:#171515 ;
+}   
+
+.page{
+    margin-top: 5px;
+    display: flex;
+    
+    width: 80%;
+    min-height: 300px;
+    Justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #2C3639;
+    color: #EAF6F6;
+    box-shadow: 0 0 15px #2C3639;
+    
+    
+}
+.middle-container{
+    width: 100%;
+    height: 350px;
+
+    
+    display: flex;
+}
+.middle-left{
+    display: flex;
+    width: 55%;
+    
+    flex-direction: column;
+    padding: 40px;
+    
+}
+.description{
+    max-width: 400px;
+}
+.middle-right{
+    width: 45%;
+    display: flex;
+    padding: 40px;
+    padding-top: 55px;
+}
+.line{
+    margin-top:30px;
+    
+}
+.bottom-container{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.bottom-left{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+
+.bar{
+    width: 80%;
+    height: 10px;
+    background-color:#DFF6FF;
+    border-radius: 13px;
+}
+.bar-color{
+    width: 80%;
+    height: 100%;
+    background-color:#47B5FF;
+    border-radius: 13px;
+}
+.inner-bottom{
+    display: flex;
+    width:100%;
+    height: 275px;
+}
+
+.bottom-right{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-heading{
+    padding-top: 30px;
+    padding-left: 10px;
+    
+    margin-left: 40px;
+}
+.last{
+    width: 100%;
+    display: flex;
+    
+    
+    
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 300px;
+    
+    padding: 45px;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+
+input{
+    width: 55%;
+    height: 25px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.submit-button{
+    cursor: pointer;
+    font-size: medium;
+    height: 40px;
+    width: 100px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    background-color: #1F4690;
+    color: #F7ECDE;
+}
+
+
+.images{
+    width:50%;
+    margin-right: 60px;
+    
+    
+}
+
+img{
+    
+
+    border:5px solid #F7ECDE;
+    border-radius: 5px;
+}
+.namings{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.top-heading{
+    padding-left: 55px;
+}

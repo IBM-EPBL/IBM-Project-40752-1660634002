@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-weight: bold   ;
+  color:	#505050 ;
+  
+}
+ul {
+  list-style-type: none;
+  color: black;
+}
+.twitter {
+  color: #1da1f2;
+}
+.facebook {
+  color: #4267b2;
+  padding-right: 5px;
+}
+.insta {
+  color: #8a3ab9;
+}
+.github {
+  color: #4078c0;
+}
+.icons{
+    display: flex;
+    
+}
+.navbar-brand{
+    display: inline-block;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin:0 100px;
+    padding: 0 15px;
+}
+li{
+    padding: 0 10px;
+}
+.container{
+    
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.box{
+    
+    min-height: 100vh;
+    width: 83%;
+    margin-bottom: 50px;
+    box-shadow:0 0  10px grey;
+    border-radius: 15px;
+    z-index: 3;
+
+}
+.photo{
+    background-color: teal;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height:250px;   
+    border-radius: 10px;
+    
+}
+.profileName{
+    flex:2;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column  ;
+    color: white;
+    font-weight: bolder;
+}
+button{
+    height:30px;
+    border-radius: 7px;
+    border-color: teal;
+    border-width: 0;
+    margin-left: 2px;
+    font-weight: bolder;
+    padding: 5px;
+    cursor: pointer;
+}
+.hire{
+    background-color: #5DCD9B ;
+    color:white;
+    font-weight: bolder;
+}
+.info{
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+.aboutMe{
+    flex:1;
+    padding: 25px;
+    margin-left: 10px;
+}
+.details{
+    flex:1;
+    display: flex;
+    padding: 25px; 
+    align-items: center;
+    /* justify-content: center;   */
+}
+td{
+    margin-bottom: 2px;
+}
+.skills{
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skillbox{
+    width: 100%;
+    display: flex;
+    min-height: 200px;
+    padding: 10px;   
+    flex-direction: column;
+    
+}
+.blue{
+    flex:1;
+    width: 40%;
+    padding:0 20px ;
+    
+
+}
+.green{
+    flex:1;
+    width: 40%;
+    padding:0 20px;
+
+}
+.pecent{
+    height:15px;
+    width: 100%;
+    background-color: teal;
+    border:1px solid black;
+    border-radius: 5px;
+    border-width: 0;
+}
+.filled{
+    width: 75%;
+    height:100%;
+    background-color: aqua;
+}
+.skillelement{
+    display: flex;
+    
+    
+}
+.contactBox{
+    padding: 30px;
+}
+form{
+    display:flex ;
+    flex-direction: column;
+}
+input{
+    width: 50%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+label{
+    margin-bottom:10px ;
+}
+.submitButton{
+    background-color: cornflowerblue;
+    color:white;
+    width: 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.heading{
+    margin-left: 20px;
+}
+.cv{
+    color: black;
+    text-decoration: none;
+}
+.profilePhoto{
+    flex:1;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-right: 20px;
+    
+}
+img{
+    border: 7px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px grey;
+}
+.para{
+    line-height: 1.5;
+}
+.head{
+    margin:2px
+}
