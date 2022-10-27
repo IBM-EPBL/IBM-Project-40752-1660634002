@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <a href="/bot"><h2>Assistant</h2> </a>
+   <a href="/upload"><h2>upload</h2></a>
+   <a href="/csspage"><h2>css page</h2></a>
+   <a href="/cssupload"><h2>upload css to cos</h2></a>
+   <a href="/user"><h2>All images</h2></a>
+
+
+   <h3>Click on the above url to view the assignment task</h3>
+
+    {% for row in file %}
+    <div style="border: 1px solid #EFEFEF;margin:10px;">
+       <h3>Filename : {{row}} </h3>
+       <img src="https://userphotos.s3.jp-tok.cloud-object-storage.appdomain.cloud/{{row}}" width="150px"></td>
+    </div>
+    {% endfor %}
+
+</body>
+</html>
