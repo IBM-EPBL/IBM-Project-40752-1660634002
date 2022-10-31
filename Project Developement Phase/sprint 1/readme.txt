@@ -35,3 +35,9 @@ TO RUN THE PROGRAM
 1.RUN THE LOCALLY SETUP DATABASE TO CREATE A TABLE - "python3 setupdb.py"
 
 2.RUN THE APP - "python3 app.py"
+
+------------------------------------------------------------------------------
+
+POC-Screenshots of the outputs are in the output folder
+
+------------------------------------------------------------------------------
