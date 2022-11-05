@@ -1,0 +1,51 @@
+{% extends '/user/base.html' %}
+{% block head %}
+    <title>News Feed</title>
+{% endblock %}
+
+{%block body%}
+<div>
+    <div class="container feed" style="width:80%;">
+       {% for data in data %}
+        <div class="card mt-3" >
+            <div class="card-top">
+                <div>
+                    <img class="title-icon" src="https://i.ytimg.com/vi/8AFQxR2d1Uw/maxresdefault.jpg" alt="icon">
+                    
+                </div>
+                <div class="post-name">
+                    <h4>{{data.author_name}}</h4>
+
+                </div>
+
+            </div>
+            <div class="card-head">
+                <div >
+                    <img class="card-img" src="https://play-lh.googleusercontent.com/FCzgw2YD80puDhwEAOsjYCZcbetxOu5CRx7VzEVJ0z1C_FjyHqOefGqkrijyLD_cHbx1" alt="image">
+
+                </div>
+                <div class="img-description">
+                    <h5 class="card-title">Title</h5>
+                    <h6 class="card-text">{{data.title}}</h6>
+
+                    <h5>Description</h5>
+                    <p>
+                        {{data.description}}
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card-body nav justify-content-end">
+              
+            </div>
+          </div>
+          {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}  

@@ -1,0 +1,72 @@
+{% extends '/user/base.html' %}
+{% block head %}
+    <title>Feed </title>
+{% endblock %}
+
+{%block body%}
+
+
+
+    {% if data %}
+    <div class="container">
+      <h1>Edit Feed</h1>
+      
+      <form class="form-control" action="/user/posts/edit/{{data[1]}}" method="POST">
+          <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Add images</label>
+              <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+            </div>
+      
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Title</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{data[2]}}"   name="title" >
+            </div>
+      
+           
+      
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Description</label>
+              <textarea  id="" cols="30" rows="10" name="description" class="card" style="width: 100%;" >{{data[3]}}</textarea>
+            </div>
+            
+      <button type="submit" class="btn btn-success">Save</button>
+      
+      </form>
+      
+      </div>
+      
+      {% else  %}
+  
+
+<div class="container">
+  <h1>Create Feed</h1>
+  
+  <form class="form-control" action="/user/feed/new" method="POST">
+      <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Add images</label>
+          <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Title</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"   name="title" >
+        </div>
+  
+       
+  
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Description</label>
+          <textarea  id="" cols="30" rows="10" name="description" class="card" style="width: 100%;"></textarea>
+        </div>
+        
+  <button type="submit" class="btn btn-success">Save</button>
+  
+  </form>
+  
+  </div>
+  
+
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Hire-up</title>
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1>Edit My Profile</h1>
+
+<form class="form-control" action="/hr/profile/edit/{{data[11]}}" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Profile Picture</label>
+        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"   name="name" value="{{data[0]}} ">
+      </div>
+
+     
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">About Me</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="about_me"  value="{% if data[2] %} {{data[2]}} {% else %}{% endif %}" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Designation</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="designation"  value="{% if data[3] %} {{data[3]}} {% else %}{% endif %}">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Experience</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="experience"  value="{% if data[4] %} {{data[4]}} {% else %}{% endif %}">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Linked-IN Url</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="url" value="{% if data[5] %} {{data[5]}} {% else %}{% endif %}">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Company Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="company_name" value="{% if data[6] %} {{data[6]}} {% else %}{% endif %}">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Company Description</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="company_description" value="{% if data[7] %} {{data[7]}} {% else %}{% endif %}">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Location</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="location_in" value="{% if data[8] %} {{data[8]}} {% else %}{% endif %}">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Website</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="website" value="{% if data[9] %} {{data[9]}} {% else %}{% endif %}">
+      </div>
+<button type="submit" class="btn btn-success">Save</button>
+
+</form>
+
+</div>
+
+{% endblock %}

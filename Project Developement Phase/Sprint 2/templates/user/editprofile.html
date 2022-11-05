@@ -1,0 +1,59 @@
+{% extends '/user/base.html' %}
+{% block head %}
+    <title>Jobs </title>
+{% endblock %}
+
+{%block body%}
+<div>
+    <div class="container">
+        <h1>Edit profile</h1>
+        {% for data in data %}
+        <form action="/user/profile/editprofile" method="post">
+            <div class="mb-3">
+                <label for="" class="form-label">Name</label>
+                <input type="text" class="form-control" id="" name="name" placeholder="Enter your name"  value="{% if data.name %} {{data.name}} {% else %}{% endif %}">
+              </div>
+            <div class="mb-3">
+            <label for="" class="form-label" style="display:flex;">About</label>
+            <textarea name="about" id="" cols="100"  rows="7">{% if data.about %} {{data.about}} {% else %}{% endif %}</textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label for="" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="" name="phone" placeholder="Phone Number" value="{% if data.phone %} {{data.phone}} {% else %}{% endif %}">
+              </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Designation</label>
+              <input type="text" class="form-control" id="" name="designation" placeholder="Ex : student" value="{% if data.designation %} {{data.designation}} {% else %}{% endif %}">
+              
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">School</label>
+                <input type="text" class="form-control" id="" name="school" placeholder="Ex : University" value="{% if data.school %} {{data.school}} {% else %}{% endif %}">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Skills</label>
+                <input type="text" class="form-control" id="" name="skills" placeholder="Ex : python, C , PHP, etc.." value="{% if data.skills %} {{data.skills}} {% else %}{% endif %}">
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Project</label>
+                <input type="text" class="form-control" id="" name="project" placeholder="project title" value="{% if data.project %} {{data.project}} {% else %}{% endif %}">
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="form-label" style="display:flex;">Project Description</label>
+                <textarea name="description" id="" cols="100" rows="7"  >{% if data.description %} {{data.description}} {% else %}{% endif %}</textarea>
+            </div>
+              
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+          {% endfor %}
+    </div>
+</div>
+
+{% endblock %}  

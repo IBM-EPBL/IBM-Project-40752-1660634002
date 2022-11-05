@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+<title>Hire-up</title>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Applications</h1>
+    {% if data %}
+    {% for data in data %}
+    <div class="jobcard card mt-3 " style="width:100%">
+        <div class="card-body d-flex " style="align-items:center ;">
+            <div style="width:5%">
+            <img src="..." class="card-body f-1"" alt="...">
+        </div>
+            <h6 class="f-5">{{data[0]}}</h6>
+            
+        </div> 
+        <div class="card-body">
+            <h6>About Jobseeker</h6>
+            <p class="card-text">{{data[1][0]}}</p>
+            <h6>Designation</h6>
+            <p class="card-text">{{data[2]}}</p>
+            <h6>Application Name</h6>
+            <p>{{data[4]}}</p>
+            
+        
+        </div>
+        
+        <div class="card-body d-flex" style="justify-content:space-between ;">
+            {% if data[-1] and data[-1]=="viewed" %}
+            <p class="colorash" >Viewed This Application</p>
+            {% endif %}
+          
+        
+          <a href="/hr/view/{{data[3]}}?search={{data[6]}}" class="btn btn-danger" style="background-color: red">View Profile</a>
+        </div>
+      </div>
+
+      {% endfor %}
+      {%endif%}
+</div>
+{% endblock %}
