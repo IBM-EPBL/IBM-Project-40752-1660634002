@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Hire-ups </title>
+{% endblock %}
+
+{%block content%}
+<div>
+    <div class="container">
+        <div >
+            <div class="jobcard card mt-3 " style="width:100%">
+                <div class="card-body d-flex " style="align-items:center ;">
+                    <h6>Name : {{data["NAME"]}}</h6>
+                </div> 
+                <div class="card-body">
+                    <h6>Email</h6>
+                    <p>{{data["EMAIL"]}}</p>
+                    <h6>About</h6>
+                    <p>{{data["ABOUT"]}}</p>
+                    <h6>Designation</h6>
+                    <p class="card-text">{{data["DESIGNATION"]}}</p>
+                    
+                    <h6>Skillset</h6>
+                    <h6>{% if data["SKILLS"]%}
+                        <ul>
+                            {% for skill in data["SKILLS"].split(",") %}
+                            <li >
+                                {{skill}}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </h6>
+                    <h6>Project</h6>
+                    <p>{{data["PROJECT"]}}</p>
+                    <h6>Description</h6>
+                    <p>{{data["DESCRIPTION"]}}</p>
+                
+                </div>
+                
+                <div class="card-body " style="justify-content:space-between ;">
+                  <form action="/hr/view/{{data["EMAIL"]}}" method="post">
+                    <label for="">Message</label>
+                    <p>Note: Clicking the button will send an email to the candidate,you can include reason for rejection or send an message</p>
+                    <textarea style="width: 100%;" name="message" id="" cols="30" rows="10"></textarea>
+                    <p style="color: grey;">Enter the Message for Rejection or Share Your Email to drop the resumae of candidate or Type the message to be mailed</p>
+
+                    <button type="submit" class="btn btn-danger ml-0" style="background-color: red" placeholder="">Reject/Accept </button>
+                  </form>
+                
+                 
+                </div>
+              </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}  

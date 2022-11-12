@@ -1,0 +1,53 @@
+{% extends '/user/base.html' %}
+{% block head %}
+    <title>News Feed</title>
+{% endblock %}
+
+{%block body%}
+<div>
+    <div class="container feed" style="width:80%;">
+        {% if data %}
+       {% for data in data %}
+        <div class="card mt-3" >
+            <div class="card-top">
+                <div>
+                    <img class="title-icon" src="https://i.ytimg.com/vi/8AFQxR2d1Uw/maxresdefault.jpg" alt="icon">
+                    
+                </div>
+                <div class="post-name">
+                    <h6> <b> {{data["AUTHOR_NAME"]}}</b></h6>
+
+                </div>
+
+            </div>
+            <div class="card-head">
+                <div style="margin-right: 10px;" style="height:100%;width:40%;display: flex; justify-content: center;align-items: center ;">
+                    <iframe width="300" height="220" style="border-radius:4%;margin: 10px " src="https://www.youtube.com/embed/{{data["VIDEO_URL"].split("/")[-1]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </div>
+                <div class="img-description">
+                    <h6 class="card-title"><b> Title </b></h6>
+                    <h6 class="card-text">{{data["TITLE"]}}</h6>
+
+                    <h6><b> Description</b> </h6>
+                    <p>
+                        {{data["DESCRIPTION"]}}
+
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="card-body nav justify-content-end">
+              
+            </div>
+          </div>
+          {% endfor %}
+          {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}  

@@ -1,0 +1,33 @@
+.userprofile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.card-head{
+    height: 100%;
+    display: flex;
+    
+}
+.card-img{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+.img-description{
+    margin-top: 10px}
+.card-top{
+    height: 60px;
+    display: flex;
+}
+.title-icon{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post-name{
+    margin: 20px 5px;
+}
+.feed{
+    margin-top: 20px;
+}
