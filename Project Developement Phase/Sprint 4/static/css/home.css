@@ -1,0 +1,106 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: grid;
+    background-image:linear-gradient(rgba(40, 49, 59,0.89),rgba(58, 67, 78, 0.4)),url("https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2021/09/10045333/Job-Searching-Online-11-Best-Practices-You-Need-to-Know-2-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+    
+}
+
+
+
+
+.log-button{
+    height: 2.5rem;
+    width:18rem;
+    color:blue;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+
+.inner{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-top:1rem;
+    top: 250px;
+    margin-left:2rem;
+    margin-right:2rem; 
+       
+}
+.description{
+    margin-top:4rem;
+    font-weight: bolder;
+    font-size: larger;
+}
+.brand h1{
+    font-family: "open sans",sans-serif;
+    font-size:52px;
+    
+    font-weight:500;
+        
+}
+.quote{
+    width:250px;
+    position: absolute;
+    top:140px;
+    left: 25px;
+}
+.quote p{
+    font-family: "Open sans",sans-serif;
+    font-weight: 300;
+    font-size:15px;
+    font-style: italic;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 380px;
+    letter-spacing:30px;
+    font-size: 20px;
+}
+
+
+.vl{
+    border-left:2px solid ; 
+    height:250px;
+    opacity:0.5 ;
+}
+.user{
+    margin-left:15rem;
+}
+.hr{
+    margin-right:15rem;
+}
+.topic{
+    margin-bottom:1rem;
+}
+.brand{
+    box-shadow: 1px solid black;
+}
+.log-icon{
+    margin-left: 71%;
+}
+.hr-icon{
+    margin-left: 68%;
+    
+}
+
+.topic{
+    margin-bottom: 3rem;
+}
+
+
+
+

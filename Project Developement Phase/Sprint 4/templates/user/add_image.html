@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Hire-up</title>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+
+    <form class="form-control" action="/user/profile/img" method="post" enctype="multipart/form-data" >
+        <label for="">Upload Your Image</label>
+        <p>Please upload the image in .JPG format</p>
+        <br>
+        
+        <input class="form-control" type="file" name="image" id="">
+        <br>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    
+</div>
+
+{% endblock %}
