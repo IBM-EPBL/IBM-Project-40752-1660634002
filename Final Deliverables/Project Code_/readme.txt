@@ -7,31 +7,35 @@ TEAM LEADER:ASWIN
 TEAM MEMBERS:AMAL ,SANTHOSH ,SURYA
 
 
-SPRINT -1
+Features:-
 
-*. Created an UI and local database to store the information of recruiter
+*. Separate login for hr and user
 
-*. He can create,edit,delete job openings
+*. used Ibm DB to store the data of the users
 
-*. Protected routes using JWT [Token stored as a cookie]
+*. Used S3 buckets(IBM ClOUD OBJECT STORAGE TO STORE Profile Pictures)
 
-*. He can edit his profile section
+*. Used Sendinblue API Services(to send mail alerts)
 
-Routes:
+*. Created an JWT token to verify the user
 
-"/hr/signin"-sigin user
+*. Implemented Chatbot (Watson Assistant)
 
-"/hr/signup"-signup user
+*. Jobseeker can share youtube url which can play in the application platform
 
-"/hr/openings"-to view openings
+*. Dockerized the application and uploaded into Cloud container
 
-"/hr/profile"- to view profile
-
-"/hr/openings/new"-to create a openings
+*. Created a Kubenetes cluster and deployed to production
 
 
 TO RUN THE PROGRAM
 
-1.RUN THE LOCALLY SETUP DATABASE TO CREATE A TABLE - "python3 setupdb.py"
+1.Database  - Integrated with IBM_db
 
-2.RUN THE APP - "python3 app.py"
+2.S3 bucket - Integrated with Cloud object Storage
+
+3.RUN THE APP - "python3 app.py"
+
+4.Credentials are removed from the Project Structure
+
+5.Some Screenschots of the OUTPUT are placed in the output folder
