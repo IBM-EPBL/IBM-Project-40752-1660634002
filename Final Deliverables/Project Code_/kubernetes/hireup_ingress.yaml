@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hireup-app-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/ssl-redirect: /
+
+spec:
+  
+  rules:
+    - http:
+        paths:
+          - backend:
+              service:
+                name: hireup-app-service
+                port:
+                  number: 5000
+            path: /
+            pathType: Prefix

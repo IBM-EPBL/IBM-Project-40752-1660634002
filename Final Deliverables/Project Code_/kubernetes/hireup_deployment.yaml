@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hireup-app
+  
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hireup-app
+  template:
+    metadata:
+      labels:
+        app: hireup-app
+
+    spec:
+      containers:
+        - name: hireup-app-container
+          image: jp.icr.io/platform/platform
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP

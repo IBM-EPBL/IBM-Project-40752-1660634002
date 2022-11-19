@@ -1,0 +1,7 @@
+flask
+gunicorn
+ibm-db
+
+sib_api_v3_sdk
+PyJWT
+ibm-cos-sdk
